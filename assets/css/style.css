@@ -1,0 +1,463 @@
+/* Changement de police + ensemble du code */
+*{
+    margin: 0%;
+    font-family: 'Lato', sans-serif;
+}
+
+/* EN-TÊTE */
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 40px 700px;
+}
+
+nav{
+    grid-column: 1/5;
+    text-align: center;
+    margin-top: 2%;
+}
+
+/* Enlever les décorations par default du lien */
+nav ul li {
+    list-style-type: none;
+    text-decoration: none;
+    display: inline;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    margin: 1%;
+}
+
+nav ul li a:hover{
+    background-color: #ffc9d04b;
+}
+
+
+/* Avatar  */
+#image{
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+#image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Placer le texte à droite de l'image */
+#moi{
+    grid-column: 3 / 5;
+    text-align: center;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    margin-right: 2%;
+}
+
+.lola{
+    background-color: #ffff41a3;
+    border-radius: 5px;
+}
+
+/* surligner mon nom/prenom */
+a {
+    border-radius: 3px;
+    padding: 0.25rem;
+}
+
+
+
+/* MAIN */
+
+main{
+    margin-top: 5%;
+    background-image: url(../img/fond_profil.jpg);
+}
+
+
+/* profil */
+h1{
+    padding-top: 6.5%;
+    text-align: center;
+    font-size: 50px;
+    color: #ffc9d0;
+}
+
+#profil h2{
+    margin-bottom: 3%;
+    margin-top: 5%;
+}
+
+p{
+    margin-bottom: 1%;
+}
+
+#profil{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 10%;
+    padding-left: 20%;
+    margin-top: 5%;
+}
+
+#perso{
+    margin-left: 20%;
+    margin-top: 10%;
+}
+
+#qualité{
+    margin-top: 5%;
+}
+
+.one {
+    border: 2px solid white;
+    box-shadow: 1px 1px 7px #ffc9d0;
+    border-radius: 3px;
+    margin-right: 64%;
+    text-align: center;
+    margin-top: 1%;
+}
+
+.two {
+    border: 2px solid white;
+    box-shadow: 1px 1px 7px #ffc9d0;
+    border-radius: 3px;
+    margin-right: 64%;
+    text-align: left;
+    margin-top: 1.5%;
+}
+
+.three {
+    border: 2px solid white;
+    box-shadow: 1px 1px 7px #ffc9d0;
+    border-radius: 3px;
+    margin-right: 64%;
+    text-align: left;
+    margin-top: 1.5%;
+}
+
+
+
+
+/* ASIDE */
+
+
+/* bachelor */
+.la_manu{
+    background-image: url(../img/fond_bachelor.jpg);
+    text-align: center;
+}
+
+.la_manu h2{
+    padding-top: 6.5%;
+    font-size: 50px;
+    color: #ffc9d0;
+}
+
+.la_manu .p1{
+    margin-top: 3%;
+    font-size: 13px;
+    color: #fff;
+    background-color: #ffc9d0;
+    border-radius: 10px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.p2{
+    margin-top: 7%;
+}
+
+.p3{
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* compétences */
+#competence{
+    background-image: url(../img/fond_competences.jpg);
+    text-align: center;
+    margin-top: 15%;
+}
+
+#competence h2{
+    padding-top: 6.5%;
+    font-size: 50px;
+    color: #ffc9d0;
+}
+
+#competence .img{
+    margin-top: 15%;
+    display: flex;
+}
+
+.img{
+    border: 2px solid white;
+    box-shadow: 1px 1px 7px #ffc9d0;
+    border-radius: 15px;
+    margin-left: 11%;
+    margin-right: 8%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.img1{
+    margin-right: 3%;
+    padding-left: 4%;
+}
+
+.img2{
+    margin-right: 3%;
+    padding-left: 2%;
+}
+
+.img3{
+    margin-right: 3%;
+    padding-left: 2%;
+}
+
+.img4{
+    margin-right: 3%;
+    padding-left: 2%;
+}
+
+.img5{
+    margin-right: 3%;
+    padding-left: 2%;
+}
+
+.img6{
+    margin-right: 3%;
+    padding-left: 2%;
+}
+
+.img7{
+    margin-right: 3%;
+    padding-left: 2%;
+}
+
+.img8{
+    margin-right: 3%;
+    padding-left: 2%;
+
+}
+
+/* expériences */
+#experience{
+    background-image: url(../img/fond_experience.jpg);
+    margin-top: 15%;
+}
+
+#experience h2{
+    padding-top: 6.5%;
+    font-size: 50px;
+    color: #ffc9d0;
+    text-align: center;
+}
+
+.ensemble{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 5%
+}
+
+.petit_ensemble{
+    text-align: left;
+    grid-column: 2 / 3;
+}
+
+
+/* mettre de la couleur seulement au symbole de "liste" */
+.color1 {
+    color: #ffc9d0;
+    font-size: x-large;
+}
+
+.color2{
+    color: #ffc9d0;
+    font-size: x-large;
+}
+
+.color3{
+    color: #ffc9d0;
+    font-size: x-large;
+}
+
+.color4{
+    color: #ffc9d0;
+    font-size: x-large;
+}
+
+.color5{
+    color: #ffc9d0;
+    font-size: x-large;
+}
+
+
+/* FOOTER */
+
+#footer{
+    background-color: #ffc9d0d1;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 8%;
+    margin-bottom: 2%;
+    border-radius: 5px;
+    display: flex;
+}
+
+.contact{
+    padding-left: 5%;
+    padding-top: 2%;
+}
+
+.contact h2{
+    font-size: 50px;
+}
+
+.nom{
+    margin-top: 20%;
+}
+
+.information{
+    display: flex;
+    margin-top: 4%;
+    margin-left: 30%;
+    margin-bottom: 6%;
+}
+
+.information h2{
+    font-size: 20px;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+.info1{
+    padding-top: 1%;
+    margin-right: 20%;
+}
+
+.info2{
+    padding-top: 1%;
+}
+
+.info2 a{
+    color: black;
+    font-size: medium;
+}
+
+.end{
+    text-align: center;
+}
+
+@media screen and (max-width:640px) {
+
+    nav{
+        opacity: 0;
+    }
+
+    header{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 400px;
+    }
+
+    #image{
+        grid-column: 3/5;
+        grid-row: 1/2;
+        margin-top: 30%;
+    }
+
+    #moi{
+        font-size: 20px;
+    }
+
+    h1{
+        margin-top: 20%;
+    }
+
+    main{
+        background-image: none;
+    }
+
+    #profil{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #perso{
+        margin-left: 0%;
+    }
+
+    #langue{
+        display: flex;
+        margin-right: 90%;
+    }
+
+    .one{
+        padding-right: 10%;
+    }
+
+    .two{
+        padding-right: 80%;
+    }
+
+    .three{
+        padding-right: 40%;
+    }
+
+    .la_manu{
+        background-image: none;
+    }
+
+    .p1{
+        padding-left: 6%;
+        padding-right: 6%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
+    #competence{
+        background-image: none;
+    }
+
+    .img{
+        display: none;
+        
+    }
+
+    #competence img{
+        width: 150%;
+        object-fit: contain;
+    }
+    
+    #experience{
+        background-image: none;
+    }
+
+    .petit_ensemble{
+        margin-left: 5%;
+        margin-bottom: 9%;
+    }
+
+    .ensemble{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #footer{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .information{
+        padding-top: 5%;
+        margin-left: 2%;
+    }
+
+}
